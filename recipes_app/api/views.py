@@ -1,0 +1,7 @@
+from rest_framework import viewsets, generics, permissions
+from recipes_app.models import Recipe
+from .serializers import RecipeSerializer
+
+class RecipeViewSet(viewsets.ModelViewSet):
+    queryset = Recipe.objects.all()
+    serializer_class = RecipeSerializer
