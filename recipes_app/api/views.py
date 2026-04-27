@@ -1,4 +1,4 @@
-from rest_framework import viewsets, generics, permissions
+from rest_framework import viewsets
 from recipes_app.models import Recipe
 from .serializers import RecipeSerializer
 
